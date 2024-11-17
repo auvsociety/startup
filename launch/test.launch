@@ -1,0 +1,3 @@
+<launch>
+    <node name="test_notify" pkg="rose_tvmc_msg" type="test.py" respawn="false"/>
+</launch>

@@ -1,0 +1,18 @@
+<launch>
+    <!-- OAK-D -->
+    <include file="$(find depthai_ros_driver)/launch/cam.launch" />
+
+    <!-- Downward Facing Camera -->
+    <!-- <node name="usb_camera" type="usb_cam_node" pkg="usb_cam" respawn="false">
+         <param name="pixel_format" value="yuyv"/>
+    </node> -->
+
+    <!-- Diagnostics -->
+    <node name="diagnostics" type="diagnostics.py" pkg="rose_tvmc_msg"/>
+
+    <!-- Startup script -->
+    <node name="startup" type="straight.py" pkg="rose_tvmc_msg"/>
+
+    <!-- STM Comms -->
+    <node name="stm" type="serial_node.py" pkg="rosserial_arduino" args="/dev/ttyACM0" />
+</launch>

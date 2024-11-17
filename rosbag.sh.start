@@ -1,0 +1,14 @@
+#!/bin/bash
+
+roslaunch /home/jetson/startup/launch/rosbag.launch &
+sleep 20
+
+timestamp=$(date +%s)
+
+mkdir /home/jetson/bags/$timestamp
+cd /home/jetson/bags/$timestamp
+
+rosbag record --split --duration=30s /sensors/angular_velocity /sensors/depth /diagnostics /sensors/orientation /sensors/linear_acceleration /sensors/magnetic_field /oak/imu/data /oak/left/camera_info /oak/left/image_raw/compressed /oak/parameter_descriptions /oak/parameter_updates /oak/rgb/camera_info /oak/rgb/image_raw/compressed /oak/right/camera_info /oak/right/image_raw/compressed /usb_camera/image_raw/compressed /control/pwm /rosout
+
+
+

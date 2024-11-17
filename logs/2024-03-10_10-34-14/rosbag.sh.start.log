@@ -1,0 +1,91 @@
+[33m[ WARN] [1710063262.995966612]: Camera calibration file /home/jetson/.ros/camera_info/head_camera.yaml not found.[0m
+[33m[ WARN] [1710063265.144088694]: unknown control 'focus_auto'
+[0m
+[33m[ WARN] [1710063268.548043953]: Device has no IR drivers[0m
+[33m[ WARN] [1710063322.322412318]: Shutdown request received.[0m
+[33m[ WARN] [1710063322.344858620]: Reason given for shutdown: [[/oak_state_publisher] Reason: new node registered with same name][0m
+[33m[ WARN] [1710063322.407415547]: Shutdown request received. Reason: [[/oak] Reason: new node registered with same name][0m
+[33m[ WARN] [1710063322.487632266]: Couldn't find service oak_nodelet_manager/unload_nodelet, perhaps the manager is already shut down[0m
+[33m[ WARN] [1710063322.514331850]: Shutdown request received.[0m
+[33m[ WARN] [1710063322.514486068]: Reason given for shutdown: [[/oak_nodelet_manager] Reason: new node registered with same name][0m
+[33m[ WARN] [1710063322.518084818]: Shutdown request received.[0m
+[33m[ WARN] [1710063322.518247162]: Reason given for shutdown: [[/usb_camera] Reason: new node registered with same name][0m
+[0m[ INFO] [1710063259.741524946]: Loading nodelet /oak of type depthai_ros_driver/Camera to manager oak_nodelet_manager with the following remappings:[0m
+[0m[ INFO] [1710063259.778582290]: waitForService: Service [/oak_nodelet_manager/load_nodelet] has not been advertised, waiting...[0m
+[0m[ INFO] [1710063260.200315102]: waitForService: Service [/oak_nodelet_manager/load_nodelet] is now available.[0m
+[0m[ INFO] [1710063322.468248777]: Unloading nodelet /oak from manager oak_nodelet_manager[0m
+[0m[ INFO] [1710063322.487545964]: waitForService: Service [/oak_nodelet_manager/unload_nodelet] has not been advertised, waiting...[0m
+corrupted double-linked list
+[31m================================================================================REQUIRED process [oak_state_publisher-2] has died!
+process has finished cleanly
+log file: /home/jetson/.ros/log/5cb917f6-dec1-11ee-bd26-a36538d9a657/oak_state_publisher-2*.log
+Initiating shutdown!
+================================================================================[0m
+... logging to /home/jetson/.ros/log/5cb917f6-dec1-11ee-bd26-a36538d9a657/roslaunch-nano-8712.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/jetson/startup/launch/rosbag.launch
+[1mstarted roslaunch server http://nano:32815/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /oak/camera_i_base_frame: oak-d_frame
+ * /oak/camera_i_cam_pitch: 0.0
+ * /oak/camera_i_cam_pos_x: 0.0
+ * /oak/camera_i_cam_pos_y: 0.0
+ * /oak/camera_i_cam_pos_z: 0.0
+ * /oak/camera_i_cam_roll: 0.0
+ * /oak/camera_i_cam_yaw: 0.0
+ * /oak/camera_i_enable_imu: True
+ * /oak/camera_i_enable_ir: True
+ * /oak/camera_i_floodlight_brightness: 0.0
+ * /oak/camera_i_imu_from_descr: False
+ * /oak/camera_i_ip: 
+ * /oak/camera_i_laser_dot_brightness: 800.0
+ * /oak/camera_i_mx_id: 
+ * /oak/camera_i_nn_type: none
+ * /oak/camera_i_parent_frame: oak-d-base-frame
+ * /oak/camera_i_pipeline_type: rgbstereo
+ * /oak/camera_i_publish_tf_from_calibration: False
+ * /oak/camera_i_usb_port_id: 
+ * /oak/camera_i_usb_speed: SUPER_PLUS
+ * /oak/left_i_publish_topic: True
+ * /oak/right_i_publish_topic: True
+ * /oak/robot_description: <?xml version="1....
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /usb_camera/pixel_format: yuyv
+
+NODES
+  /
+    oak (nodelet/nodelet)
+    oak_nodelet_manager (nodelet/nodelet)
+    oak_state_publisher (robot_state_publisher/robot_state_publisher)
+    stm (rosserial_arduino/serial_node.py)
+    usb_camera (usb_cam/usb_cam_node)
+
+auto-starting new master
+[1mprocess[master]: started with pid [8772][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/jetson/startup/launch/rosbag.launch http://localhost:11311
+[1msetting /run_id to 5cb917f6-dec1-11ee-bd26-a36538d9a657[0m
+[1mprocess[rosout-1]: started with pid [8787][0m
+started core service [/rosout]
+[1mprocess[oak_state_publisher-2]: started with pid [8790][0m
+[1mprocess[oak_nodelet_manager-3]: started with pid [8791][0m
+[1mprocess[oak-4]: started with pid [8792][0m
+[1mprocess[usb_camera-5]: started with pid [8798][0m
+[1mprocess[stm-6]: started with pid [8852][0m
+[stm-6] killing on exit
+[usb_camera-5] killing on exit
+[oak-4] killing on exit
+[oak_nodelet_manager-3] killing on exit
+[oak_state_publisher-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
